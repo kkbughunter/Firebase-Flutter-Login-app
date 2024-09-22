@@ -78,21 +78,39 @@ class _PhoneNumberPageState extends State<PhoneNumberPage> {
                   const SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
-                      // Send OTP and navigate to PIN page
+                      // Show loading dialog
+                      showDialog(
+                        context: context,
+                        barrierDismissible:
+                            false, // Prevent dismissing the dialog
+                        builder: (BuildContext context) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        },
+                      );
+
+                      // Simulate OTP sending and 5 seconds delay
                       LoginService.sendOTP(
                         _selectedCountryCode,
                         _phoneController.text,
                         context,
                       ).then((_) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const PinPage()),
-                        );
+                        Future.delayed(const Duration(seconds: 5), () {
+                          // Close the loading dialog
+                          Navigator.pop(context);
+
+                          // Navigate to PIN page
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const PinPage()),
+                          );
+                        });
                       });
                     },
                     child: const Text('Next'),
-                  ),
+                  )
                 ],
               ),
             ),
