@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               height: 100,
               width: double.infinity,
-              color: theme.colorScheme.background,
+              color: theme.colorScheme.surface,
               child: const Center(
                 child: Text(
                   'Background Color Box',

@@ -1,11 +1,11 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:iet_control/app_theme/custom_theme.dart';
-import 'package:iet_control/auth/pin_page.dart';
+import '/app_theme/custom_theme.dart';
+import '/auth/pin_page.dart';
 import 'login_service.dart';
 
 class PhoneNumberPage extends StatefulWidget {
-  const PhoneNumberPage({Key? key}) : super(key: key);
+  const PhoneNumberPage({super.key});
 
   @override
   State<PhoneNumberPage> createState() => _PhoneNumberPageState();

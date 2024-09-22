@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iet_control/auth/login_repo.dart';
+import '/auth/login_repo.dart';
 
 class LoginService {
   static Future<void> sendOTP(

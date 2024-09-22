@@ -50,20 +50,22 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB3usuxJqpEtKSl6i8eRmYAFip_fR-T_No',
-    appId: '1:1087983268409:android:0e50bf494c90482380d3e8',
-    messagingSenderId: '1087983268409',
-    projectId: 'final-year-project-400d2',
-    storageBucket: 'final-year-project-400d2.appspot.com',
+    apiKey: 'AIzaSyCUe1I1i3sr7p3cCOdfk892lUhkwz2kuaI',
+    appId: '1:437422277302:android:a6df8c70724c62dd591c17',
+    messagingSenderId: '437422277302',
+    projectId: 'project1-ac5cd',
+    databaseURL: 'https://project1-ac5cd-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'project1-ac5cd.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAqna5hAVTu6AyCkUfITAvSgdTXS2e7QBI',
-    appId: '1:1087983268409:ios:42090508793dcdfc80d3e8',
-    messagingSenderId: '1087983268409',
-    projectId: 'final-year-project-400d2',
-    storageBucket: 'final-year-project-400d2.appspot.com',
-    iosBundleId: 'com.example.ietControl',
+    apiKey: 'AIzaSyC27sAh9tEvT1hbxPfaqT61A2qQj2ZWVgE',
+    appId: '1:437422277302:ios:af2719a1709cce38591c17',
+    messagingSenderId: '437422277302',
+    projectId: 'project1-ac5cd',
+    databaseURL: 'https://project1-ac5cd-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'project1-ac5cd.appspot.com',
+    iosBundleId: 'com.example.kkfinctracker',
   );
 
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:iet_control/app_theme/custom_theme.dart';
+import '/app_theme/custom_theme.dart';
 import 'login_service.dart';
 
 class PinPage extends StatefulWidget {
-  const PinPage({Key? key}) : super(key: key);
+  const PinPage({super.key});
 
   @override
   State<PinPage> createState() => _PinPageState();
