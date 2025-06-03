@@ -30,4 +30,9 @@ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -sto
 ```bash
 keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
 ```
+or
+```bash
+keytool -list -v -alias androiddebugkey -keystore "$env:USERPROFILE\.android\debug.keystore" -storepass android -keypass android
+```
+
 ![image](https://github.com/user-attachments/assets/6fb5a912-844e-400a-b38b-492f2b56c2d7)
